@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Eye, EyeOff, Leaf, Sprout, ShoppingBag, Drone, Hexagon, ChevronRight } from 'lucide-react';
+import { Eye, EyeOff, Leaf, Sprout, ShoppingBag, Drone, Hexagon } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 import Input from '../../components/ui/Input';
 import Button from '../../components/ui/Button';
@@ -142,7 +142,7 @@ export default function LoginPage() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="mt-10 space-y-4"
             >
-              {featureHighlights.map((item, i) => (
+              {featureHighlights.map((item) => (
                 <div key={item.label} className="flex items-center gap-3 text-white/90">
                   <div className="w-8 h-8 rounded-lg bg-white/15 backdrop-blur-sm flex items-center justify-center">
                     <item.icon size={16} className="text-white" />

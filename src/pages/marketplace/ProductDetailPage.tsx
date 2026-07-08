@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Star, ShoppingCart, Minus, Plus, ThumbsUp, MessageSquare, Verified } from 'lucide-react';
 import { productCatalog, categoryLabels } from '../../data/products';
-import { formatPeso, generateId } from '../../lib/utils';
+import { formatPeso } from '../../lib/utils';
 import { useCartStore } from '../../store/cartStore';
 import { useAuthStore } from '../../store/authStore';
 import Breadcrumbs from '../../components/ui/Breadcrumbs';
