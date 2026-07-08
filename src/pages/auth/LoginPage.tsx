@@ -98,8 +98,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F6FBF8] flex font-sans">
-      <div className="hidden lg:flex w-[45%] relative overflow-hidden bg-gradient-to-br from-[#1FA971] via-[#2FBF8F] to-[#79D9A6] p-12 flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-[#1FA971] via-[#2FBF8F] to-[#79D9A6] flex font-sans">
+      <div className="hidden lg:flex w-[45%] relative overflow-hidden p-12 flex-col">
         <HeroPattern />
         <GeometricField />
 
@@ -182,7 +182,7 @@ export default function LoginPage() {
         >
           <div className="lg:hidden flex items-center gap-3 mb-6 sm:mb-10">
             <img src="/logo.png" alt="Viridian" className="w-9 sm:w-10 h-9 sm:h-10 object-contain" />
-            <span className="text-xl sm:text-2xl font-extrabold text-[#1FA971]">Viridian</span>
+            <span className="text-xl sm:text-2xl font-extrabold text-white">Viridian</span>
           </div>
 
           <div className="bg-white rounded-[20px] border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.06)] px-5 py-8 sm:px-10 sm:py-12">
@@ -296,9 +296,9 @@ export default function LoginPage() {
             </div>
           </div>
 
-          <p className="text-center text-sm sm:text-base text-[#6B7280] mt-6 sm:mt-8">
+          <p className="text-center text-sm sm:text-base text-white/80 mt-6 sm:mt-8">
             Don&apos;t have an account?{' '}
-            <Link to="/register" className="font-semibold text-[#1FA971] hover:text-[#1FA971]/80 transition-colors">
+            <Link to="/register" className="font-semibold text-white hover:text-white/70 transition-colors">
               Create Account
             </Link>
           </p>
